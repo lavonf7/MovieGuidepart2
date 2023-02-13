@@ -1,4 +1,4 @@
-FILENAME = "movies.txt"
+FILENAME = "Movies.txt"
 
 def write_movies(movies):
     with open(FILENAME, "w") as file:
@@ -32,4 +32,5 @@ def delete_movie(movies):
         movie = movies.pop(index - 1)
         write_movies(movies)
         print(f"{movie} was deleted.\n")
+
 
